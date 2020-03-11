@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(128,70,252,1) 100%);
+}
+
+h1 {
+    font-size: 36px;
+   font-weight: 700;
+   text-align: center;
+   color: whitesmoke; 
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    color: #fff;
+    background-color: #007bff;
+    outline: none;
+    min-height: 38px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    transition: .3s all;
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+    #search {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+}
+
+#search:hover {
+    transform: scale(1.1);
+    transition: .3s all;
+}
+
+#movies-searchable {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.movie {
+    margin-bottom: 50px;
+}
+
+.movie h2 {
+    font-size: 32px;
+    color: lightgrey;
+}
+
+@media only screen and (max-width: 480px) {
+    .movie h2 {
+        text-align: center;
+    }
+}
+
+#inputValue {
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+section img {
+    /* width: 300px; */
+    height: 400px;
+    transition: 250ms all;
+}
+
+@media only screen and (max-width: 480px) {
+    section img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+img:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content {
+    border: 1px solid lightgray;
+    display: none;
+}
+
+#content-close {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 21px;
+    color: whitesmoke; 
+}
+
+.content div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .content div iframe {
+        margin-bottom: 15px;
+        width: 320px;
+        height: 300px;
+    }
+}
+
+.content-display {
+    display: block;
+}
